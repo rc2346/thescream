@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ruby's Project • A-Frame</title>
+    <meta name="description" content="Ruby's Project • A-Frame">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script> 
+  </head>
+  <body>
+    <a-scene background="color: #262363">
+      
+      <! here's how I made the scream himself>
+      <!body>
+      <a-cylinder position="0.5 0.7 -2" radius="0.27" height="2" color="#414141" shadow></a-cylinder>
+      <! right arm>
+      <a-cylinder position="0.75 1.5 -1.8" radius="0.08" height="0.6" color="#414141" shadow></a-cylinder>
+      <! left arm>
+      <a-cylinder position="0.23 1.5 -1.8" radius="0.08" height="0.6" color="#414141" shadow></a-cylinder>
+      <!head>
+      <a-sphere position="0.5 2 -2" radius="0.4" color="#E2D8AE" ></a-sphere>
+      <a-sphere position="0.58 2.05 -1.61" radius=".05" color="#343232"></a-sphere>
+      <a-sphere position="0.3 2.05 -1.64" radius=".05" color="#343232"></a-sphere>
+      <a-ring position="0.45 1.8 -1.6" radius-inner="0.05" radius-outer="0.07" color="#343232"></a-ring>
+      
+      <! here's the two people in the back>
+      <a-cylinder position="-9 0.7 -15" radius="0.27" height="2" color="#414141" ></a-cylinder>
+      <a-cylinder position="-10 0.7 -15" radius="0.27" height="2" color="#414141"></a-cylinder>
+      <a-sphere position="-9 2 -15" radius="0.4" color="#414141"></a-sphere>
+      <a-sphere position="-10 2 -15" radius="0.4" color="#414141"></a-sphere>
+      
+      <!here's the environment>
+      <a-entity environment="skyType: gradient; skyColor: #139690; horizonColor: #E95E0F; groundTexture: walkernoise; groundColor: #906453; groundColor2: #395B63"></a-entity>
+     
+      <! here's the river>
+      <a-plane src="https://cdn.glitch.com/4e20b635-3a17-4a09-81ed-8680ee1e2399%2Fthumbnails%2Fphotos_2018_4_23_fst_abstract-ice-texture.jpg?1569516874712" position="34 0.39999 -35" rotation="-90 120 0" width="7" height="45" color="#799DEE" shadow></a-plane>
+      <a-plane src="https://cdn.glitch.com/4e20b635-3a17-4a09-81ed-8680ee1e2399%2Fthumbnails%2Fphotos_2018_4_23_fst_abstract-ice-texture.jpg?1569516874712" position="19 0.39999 -20" rotation="-90 -180 0" width="7" height="15" color="#799DEE"></a-plane>
+      <a-plane src="https://cdn.glitch.com/4e20b635-3a17-4a09-81ed-8680ee1e2399%2Fthumbnails%2Fphotos_2018_4_23_fst_abstract-ice-texture.jpg?1569516874712" position="4 0.39 -5" rotation="-90 120 0" width="3" height="45" color="#799DEE"></a-plane>
+      
+      <! this is how I made the bridge, there's a lot of posts>
+      <a-plane src="https://cdn.glitch.com/4e20b635-3a17-4a09-81ed-8680ee1e2399%2Fthumbnails%2Fseamless_Wood_tile.jpg?1569506212193" position="-6 0.4 -10" rotation="-90 35 0" width="4" height="100" color="#763A18" shadow></a-plane> 
+      <a-plane position="-3.5 1.1 -10" rotation="180 125 90" width="0.2" height="100" color="#763A18" shadow></a-plane>
+      <a-plane position="-3.5 1.6 -10" rotation="180 125 90" width="0.2" height="100" color="#763A18" shadow></a-plane>
+      <a-plane position="-3.5 0.6 -10" rotation="180 125 90" width="0.2" height="100" color="#763A18" shadow></a-plane>
+      <a-plane position="-30.2 0.5 -48" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-28.8 0.5 -46" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-27.4 0.5 -44" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-26 0.5 -42" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-24.6 0.5 -40" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-23.2 0.5 -38" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-21.8 0.5 -36" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-20.4 0.5 -34" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-19 0.5 -32" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-17.6 0.5 -30" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-16.2 0.5 -28" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-14.8 0.5 -26" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-13.4 0.5 -24" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-12 0.5 -22" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-10.6 0.5 -20" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-9.2 0.5 -18" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-7.8 0.5 -16" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-6.4 0.5 -14" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-5 0.5 -12" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-3.6 0.5 -10" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-2.2 0.5 -8" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="-0.8 0.5 -6" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="0.6 0.5 -4" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="2 0.5 -2" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="3.4 0.5 0" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="4.8 0.5 2" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="6.2 0.5 4" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="7.6 0.5 6" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="9 0.5 8" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="10.4 0.5 10" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="11.8 0.5 12" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="13.2 0.5 14" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="14.6 0.5 16" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="16 0.5 18" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="17.4 0.5 20" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="18.8 0.5 22" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="20.2 0.5 24" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="21.6 0.5 26" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+      <a-plane position="23 0.5 28" rotation="0 315 0" width="0.15" height="3" color="#763A18" shadow></a-plane>
+    </a-scene>
+  </body>
+</html>
